@@ -142,7 +142,7 @@ bot('sendmessage',[
 }
 if($text == 'تاك للكل')
 {
-		$pwr = $MadelineProto->channels->getParticipants('channel' => InputChannel);
+		$pwr = $MadelineProto->channels->getParticipants(['channel' => InputChannel]);
 							$users = '';
 							foreach($pwr['participants'] as $user){
 								if(isset($user['user']['username'])){
