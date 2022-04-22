@@ -2,13 +2,16 @@
 if (!file_exists('madeline.php')) {
     copy('https://phar.madelineproto.xyz/madeline.php', 'madeline.php');
 }
+include 'madeline.php';
+
+$MadelineProto = new \danog\MadelineProto\API('session.madeline');
+$MadelineProto->start();
 ob_start();
 $API_KEY = "5253090075:AAHFOCSdHSWC03qwP0Lb1Oar-71J437FlTg";
 define('API_KEY',$API_KEY);
 echo "<a href='https://api.telegram.org/bot$API_KEY/setwebhook?url=".$_SERVER['SERVER_NAME']."".$_SERVER['SCRIPT_NAME']."'>setwebhook</a>";
 echo file_get_contents("https://api.telegram.org/bot$API_KEY/getme?url=".$_SERVER['SERVER_NAME']."".$_SERVER['SCRIPT_NAME']);
-include 'madeline.php';
-$MadelineProto = new \danog\MadelineProto\API('session.madeline');
+
 global $MadelineProto;
 function bot($method,$datas=[]){
 $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -58,8 +61,8 @@ bot('sendMessage', [
 ]
 ])
 ]);return false;}}
-$tws = "alitexttelebbbot";
-$kna = "totanf";
+$tws = "kk";
+$kna = "kk";
 $Alihassan2004 = 5202630832;
 
 $LIST = explode(' ', file_get_contents('list.txt'));
@@ -139,7 +142,7 @@ bot('sendmessage',[
 }
 if($text == 'تاك للكل')
 {
-		$pwr = $MadelineProto->get_pwr_chat($update);
+		$pwr = $MadelineProto->channels->getParticipants('channel' => InputChannel);
 							$users = '';
 							foreach($pwr['participants'] as $user){
 								if(isset($user['user']['username'])){
@@ -189,6 +192,3 @@ if($text != "نشر" and $Alihassan2004 == "Ali" and $chat_id == $Alihassan2004)
   unlink("Alihassan2004.txt");
 }
 
-$MadelineProto->start();
-$MadelineProto->setEventHandler('\tagBot');
-$MadelineProto->loop(-1);
