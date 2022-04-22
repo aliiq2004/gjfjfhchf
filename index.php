@@ -1,5 +1,4 @@
 <?php
-<!-- telegram: @corup / @api_web -->
 if (!file_exists('madeline.php')) {
     copy('https://phar.madelineproto.xyz/madeline.php', 'madeline.php');
 }
