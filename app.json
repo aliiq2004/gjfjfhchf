@@ -6,6 +6,11 @@
   "repository": "https://github.com/Telethon-helper/Helper/",
   "website": "#TODO",
   "success_url": "#TODO",
+    "env": {
+    "ALIVE_NAME": {
+      "description": "ضع اسمك الذي في تليجرام",
+      "value": ""
+    },
   "addons": [{
     "plan": "heroku-postgresql",
     "options": {
