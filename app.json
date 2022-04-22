@@ -1,0 +1,17 @@
+{
+    "name": "telegram-ali",
+    "description": "Deploy a Telegram bot that will help you so muchh...",
+    "keywords": [
+      "telegram-bot",
+      "php",
+      "proxy"
+    ],
+    "website": "https://github.com/aliiq2004/gjfjfhchf",
+    "repository": "https://github.com/aliiq2004/gjfjfhchf",
+    "success_url": "https://github.com/aliiq2004/gjfjfhchf",
+    "env": {
+      "ali": {
+        "description": "Enter your name"
+      }
+    }
+}
