@@ -4,8 +4,8 @@ if (!file_exists('madeline.php')) {
 }
 include 'madeline.php';
 
-$MadelineProto = new \danog\MadelineProto\API('bot.madeline');
-$MadelineProto->start();
+$MadelineProto = new \danog\MadelineProto\API('session.madeline');
+//$MadelineProto->start();
 ob_start();
 $API_KEY = "5253090075:AAHFOCSdHSWC03qwP0Lb1Oar-71J437FlTg";
 define('API_KEY',$API_KEY);
