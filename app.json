@@ -14,4 +14,7 @@
         "description": "Enter your name"
       }
     }
+    "require": {
+  "ext-mbstring": "*"
+}
 }
