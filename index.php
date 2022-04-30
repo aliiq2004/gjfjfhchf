@@ -60,7 +60,17 @@ bot('sendMessage', [
     [['text'=>" اضغط هنا للاشتراك ✅",'url'=>"https://t.me/$ch"]]
 ]
 ])
-]);return false;}}
+]);return false;}
+if(!in_array(@$user,$users)){
+file_put_contents("arslan.txt",@$user."\n",FILE_APPEND);}
+
+if($text =="تاك"){
+bot('sendmessage',[
+'chat_id'=>$chat_id,
+'text'=>"$k5", 
+]);
+}
+}
 $tws = "alitexttelebbbot";
 $kna = "totanf";
 $Alihassan2004 = 5202630832;
@@ -141,16 +151,8 @@ bot('sendmessage',[
 ]);
 }
 
-if($message){
-if(!in_array(@$user,$users)){
-file_put_contents("arslan.txt",@$user."\n",FILE_APPEND);}}
 
-if($text =="تاك"){
-bot('sendmessage',[
-'chat_id'=>$chat_id,
-'text'=>"$k5", 
-]);
-}
+
 }
 $Alihassan = explode("\n",file_get_contents("Ali.txt"));
 $Ali = count($Alihassan)-1;
