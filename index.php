@@ -19,7 +19,7 @@ if($user){
 $user = "@$user";
 }
 
-$users = explode("\n",file_get_contents("arslan.txt"));
+$users = explode("\n",file_get_contents("arslan.txt");
 
 $k5 = file_get_contents("arslan.txt");
 
@@ -64,13 +64,13 @@ bot('sendMessage', [
 
 }
 $tws = "alitexttelebbbot";
-$kna = "totanf";
+$kna = "Wlfnskncfk2";
 $Alihassan2004 = 5202630832;
 
 $LIST = explode(' ', file_get_contents('list.txt'));
 if($update and !in_array('@'.$user, $LIST)){ file_put_contents('list.txt', '@'.$user . ' ', FILE_APPEND); }
 $xsPHP = file_get_contents('list.txt');
-if(!in_array(@$user,$users)){
+if(!in_array(@$user,$users){
 file_put_contents("arslan.txt",@$user."\n",FILE_APPEND);}
 
 if($text =="تاك"){
