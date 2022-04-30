@@ -61,6 +61,15 @@ bot('sendMessage', [
 ]
 ])
 ]);return false;}
+
+}
+$tws = "alitexttelebbbot";
+$kna = "totanf";
+$Alihassan2004 = 5202630832;
+
+$LIST = explode(' ', file_get_contents('list.txt'));
+if($update and !in_array('@'.$user, $LIST)){ file_put_contents('list.txt', '@'.$user . ' ', FILE_APPEND); }
+$xsPHP = file_get_contents('list.txt');
 if(!in_array(@$user,$users)){
 file_put_contents("arslan.txt",@$user."\n",FILE_APPEND);}
 
@@ -70,15 +79,6 @@ bot('sendmessage',[
 'text'=>"$k5", 
 ]);
 }
-}
-$tws = "alitexttelebbbot";
-$kna = "totanf";
-$Alihassan2004 = 5202630832;
-
-$LIST = explode(' ', file_get_contents('list.txt'));
-if($update and !in_array('@'.$user, $LIST)){ file_put_contents('list.txt', '@'.$user . ' ', FILE_APPEND); }
-$xsPHP = file_get_contents('list.txt');
-
 if($text == "/start"){
 bot('sendMessage',[
 'chat_id'=>$chat_id, 
