@@ -1,23 +1,17 @@
 {
-    "name": "telegram-ali",
-    "description": "Deploy a Telegram bot that will help you so muchh...",
+    "name": "bot tagall",
+    "description": "https://t.me/decshell",
     "keywords": [
       "telegram-bot",
-      "php",
+      "python",
       "proxy"
     ],
-    "website": "https://github.com/aliiq2004/gjfjfhchf",
-    "repository": "https://github.com/aliiq2004/gjfjfhchf",
-    "success_url": "https://github.com/aliiq2004/gjfjfhchf",
+    "website": "https://github.com/aliiq2004/mino",
+    "repository": "https://github.com/aliiq2004/mino",
+    "success_url": "https://github.com/aliiq2004/mino",
     "env": {
-      "ali": {
-        "description": "Enter your name"
+      "TOKEN": {
+        "description": "token"
       }
-    },
-    "require": {
-        "fabpot/goutte": "^3.2",
-        "guzzlehttp/guzzle": "^6.2",
-        "paquettg/php-html-parser": "^1.7",
-        "ext-mbstring": "*"
-}
+    }
 }
