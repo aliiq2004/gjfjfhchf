@@ -6,12 +6,15 @@
       "python",
       "proxy"
     ],
-    "website": "https://github.com/aliiq2004/mino",
-    "repository": "https://github.com/aliiq2004/mino",
-    "success_url": "https://github.com/aliiq2004/mino",
+    "website": "https://github.com/aliiq2004/gjfjfhchf",
+    "repository": "https://github.com/aliiq2004/gjfjfhchf",
+    "success_url": "https://github.com/aliiq2004/gjfjfhchf",
     "env": {
       "TOKEN": {
         "description": "token"
+      },
+      "BOT": {
+        "description": "BOT"
       }
     }
 }
